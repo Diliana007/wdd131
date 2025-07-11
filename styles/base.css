@@ -1,154 +1,65 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@400;700&display=swap');
-
-/* Global Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Acme', Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-/* Header */
-header {
-  background-color: rgb(0, 110, 182);
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-#course-title {
-  display: block;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  background-color: #333;
-  padding: 1rem;
-}
-
-nav a {
-  color: #eee;
-  text-decoration: none;
-  padding: 0.75rem 1.25rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-nav a:hover {
-  font-weight: 700;
-  background-color: #0066cc;
-  transform: scale(1.05);
-  text-decoration: underline;
-  text-decoration-color: yellow;
-}
-
-/* Main Layout */
+/*css */
 main {
   max-width: 960px;
   margin: 2rem auto;
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr 1fr; /* Left card is 2 parts, right is 1 */
   gap: 2rem;
 }
 
-/* Card Sections */
-.card {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+{
+	margin: 0;
+	padding: 0;
 }
 
-.card h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #004c99;
+body {
+	font-family: acme, Arial, sans-serif;
 }
 
-.card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-  border-radius: 8px;
+h1 {
+	text-align: center;
+	background-color: rgb(0 110 182 / 1);
+	padding: 0.5rem;
+	color: #fff;
 }
 
-/* Paragraphs */
 p {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1rem;
+	text-align: center;
 }
 
-/* Footer */
-footer {
-  background-color: #f0f0f0;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
-  border-top: 2px solid #ddd;
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
 }
 
-footer p {
-  margin: 0.5rem 0;
+main {
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 / .2);
+	padding: 1rem;
+	background-color: #eee;
 }
 
-footer span {
-  font-weight: 600;
-  color: #222;
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #333;
+	align-items: center;
+}
+.navigation li {
+	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+}
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
 }
 
-@media (max-width: 600px) {
-  header {
-    padding: 1rem 0.5rem;
-  }
-
-  #course-title {
-    font-size: 1.5rem;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    width: 90%;
-    text-align: center;
-  }
-
-  main {
-    padding: 1rem;
-    grid-template-columns: 1fr;
-  }
-
-  .card {
-    padding: 1rem;
-  }
-
-  .card h2 {
-    font-size: 1.25rem;
-  }
-
-  footer {
-    padding: 1rem;
-    font-size: 0.85rem;
-  }
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
 }
