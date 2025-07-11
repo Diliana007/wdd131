@@ -90,3 +90,15 @@ main {
   gap: 1rem;
 }
 
+.city-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.city-images img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
