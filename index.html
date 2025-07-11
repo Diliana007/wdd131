@@ -43,9 +43,17 @@
   </section>
 </main>
 
+ <footer>
+  <p>&copy; <span id="currentyear"></span> Diliana Thompson. Coventry, England.</p>
+  <p id="lastModified"></p>
 
-  <footer>
-    <p>&copy; 2025 Diliana Thompson. All rights reserved.</p>
-  </footer>   
+  <script>
+    // Set the current year dynamically
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Display the last modified date of the document
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
+</footer>   
 </body>
 </html>
