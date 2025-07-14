@@ -1,0 +1,29 @@
+/* Apply the Roboto font to the entire document */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f9ff;
+}
+
+/* Shared styles for header, main, and footer */
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc; /* Faint border */
+  background-color: #e6f2ff; /* Soft blue background */
+}
+
+/* Main layout: single-column grid with equal spacing */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Section styling */
+section {
+  padding: 1rem;
+  background-color: #ffffff; /* Light background for contrast */
+}
