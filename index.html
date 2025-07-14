@@ -3,65 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 – Dynamic Web Fundamentals – Diliana Thompson - Explore responsive web design, HTML, CSS, and JavaScript techniques for building dynamic, accessible websites.</title>
+  <title>WDD 131 – Diliana Thompson</title>
   <meta name="author" content="Diliana Thompson">
+  <meta name="description" content="Explore responsive web design, HTML, CSS, and JavaScript techniques for building dynamic, accessible websites.">
   <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
-    <nav>
-      <a href="https://www.linkedin.com/">www.linkedin.com/in/diliana-t-aa31053</a>
-      <a href="https://byupw.instructure.com/">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/prov/4?lang=eng">Favorite Scripture Proverbs 4:7 – “Wisdom is the principal thing; therefore get wisdom: and with all thy getting get understanding.”💙🧠</a>
-      <a href="final-project/index.html">Final Project</a>
-    </nav>
-  </header>
+  <div class="holy-grail">
+    <header>
+      <span id="course-title">WDD 131 – Author Diliana Thompson</span>
+      <nav>
+        <a href="www.linkedin.com/in/diliana-t-aa31053">Linkedin</a>
+        <a href="https://byupw.instructure.com/">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/prov/4?lang=eng">Favorite Scripture</a>
+        <a href="final-project/index.html">Final Project</a>
+      </nav>
+    </header>
 
- <main>
-  <h1>Diliana Thompson</h1>
+    <div class="holy-grail-body">
+      <main>
+        <h1>Dinamic Web Fundamentals</h1>
+        
+        <div class="holy-grail-columns">
+          <section class="card">
+            <h2>About Me</h2>
+            <div class="about-content">
+              <div class="about-text">
+                <p>Hello! I'm a passionate web developer based in Coventry. I love blending creativity with code to build meaningful digital experiences. This city inspires me with its rich history and vibrant energy—and I carry that spirit into everything I create.</p>
+                <div class="city-flag>
+                  <img src="images/coventry-flag.webp" alt="Coventry Flag">
+                </div>
+                <div class="city-image>
+                  <img src="images/coventry-city.webp" alt="Coventry city center skyline with historic cathedral spires rising above a mix of modern and traditional buildings under a bright blue sky, creating a lively and welcoming atmosphere"></div>
+                </div>
+              </div>
+              <img src="images/Me.webp" alt="Diliana Thompson" class="profile-img">
+            </div>
+          </section>
 
-  <section class="card">
-    <h2>About Me</h2>
-    <img src="images/Me.jpg" alt="Diliana Thompson">
-    <img src="images/coventry-flag.jpg" alt="Coventry Flag">
-    <img src="images/coventry-city.webp" alt="Coventry City view">
-    <p>Hello! I'm a passionate web developer based in Coventry. I love blending creativity with code to build meaningful digital experiences. This city inspires me with its rich history and vibrant energy—and I carry that spirit into everything I create.</p>
-  </section>
+          <section class="card">
+            <h2>Web Dev Resources</h2>
+            <img src="images/web-resources.webp" alt="Web development resources illustration" class="resources-img">
+            <p>Here are some beginner-friendly websites to learn web development:</p>
+            <ul>
+              <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a> – Hands-on projects and certifications.</li>
+              <li><a href="https://www.theodinproject.com/">The Odin Project</a> – Project-based learning path.</li>
+              <li><a href="https://developer.mozilla.org/">MDN Web Docs</a> – Trusted documentation and tutorials.</li>
+              <li><a href="https://www.codecademy.com/">Codecademy</a> – Interactive lessons with guided paths.</li>
+              <li><a href="https://www.w3schools.com/">W3Schools</a> – Easy-to-follow tutorials and examples.</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
 
-  <section class="card">
-    <h2>Web Dev Resources</h2>
-    <img src="images/web-resources.jpg" alt="Web development resources illustration">
-    <p>Here are some beginner-friendly websites to learn web development:</p>
-    <ul>
-      <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a> – Hands-on projects and certifications.</li>
-      <li><a href="https://www.theodinproject.com/">The Odin Project</a> – Project-based learning path.</li>
-      <li><a href="https://developer.mozilla.org/">MDN Web Docs</a> – Trusted documentation and tutorials.</li>
-      <li><a href="https://www.codecademy.com/">Codecademy</a> – Interactive lessons with guided paths.</li>
-      <li><a href="https://www.w3schools.com/">W3Schools</a> – Easy-to-follow tutorials and examples.</li>
-    </ul>
-  </section>
-
-<div class="city-images">
-  <img src="images/coventry-flag.jpg" alt="Coventry Flag" class="flag-img">
-  <img src="images/coventry-city.webp" alt="Coventry City view" class="city-img">
-</div>
-  
-</main>
-
- <footer>
-  <p>&copy; <span id="currentyear"></span> Diliana Thompson. Coventry, England.</p>
-  <p id="lastModified"></p>
-
-  <script>
-    // Set the current year dynamically
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-
-    // Display the last modified date of the document
-    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
-  </script>
-</footer>   
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Diliana Thompson. Coventry, England.</p>
+      <p id="lastModified"></p>
+    </footer>
+  </div>
 </body>
 </html>

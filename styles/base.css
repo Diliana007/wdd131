@@ -1,104 +1,186 @@
-/*css */
-main {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* Left card is 2 parts, right is 1 */
-  gap: 2rem;
-}
-
 * {
-	margin: 0;
-	padding: 0;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-body {
-	font-family: acme, Arial, sans-serif;
-}
+        body {
+            font-family: "Montserrat", sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #D0E7F5;
+        }
 
-h1 {
-	text-align: center;
-	background-color: rgb(0 110 182 / 1);
-	padding: 0.5rem;
-	color: #fff;
-}
+        .holy-grail {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-p {
-	text-align: center;
-}
+        .holy-grail-body {
+            flex: 1;
+            display: flex;
+        }
 
-nav {
-	margin: 0 auto 2rem;
-	max-width: 90vw;
-}
+        header {
+            background-color: #87CEEB;
+            color: #002147;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
 
-main {
-	margin: 1rem;
-	border: 1px solid rgb(0 0 0 / .2);
-	padding: 1rem;
-	background-color: #eee;
-}
+        nav {
+            background-color: #002147;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-.navigation {
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #333;
-	align-items: center;
-}
-.navigation li {
-	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
-}
-.navigation a {
-	display: block;
-	color: #eee;
-	padding: 0.75rem;
-	text-decoration: none;
-	text-align: center;
-}
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 8px 12px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
 
-.navigation a:hover {
-	font-weight: 700;
-	text-decoration: underline;
-	text-decoration-color: yellow;
-}
+        nav a:hover {
+            background-color: #D0E7F5;
+            color: #002147;
+            border-radius: 5px;
+        }
 
-.profile-img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 1rem;
-}
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
 
-.flag-img,
-.city-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 6px;
-  display: inline-block;
-  margin: 0.5rem;
-}
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #002147;
+        }
 
-.city-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+        .holy-grail-columns {
+            display: flex;
+            gap: 2rem;
+        }
 
-.city-images {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #87CEEB;
+            border-radius: 10px;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 33, 71, 0.1);
+            flex: 1;
+            transition: box-shadow 0.3s ease;
+        }
 
-.city-images img {
-  max-width: 150px;
-  height: auto;
-  border-radius: 6px;
-}
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 33, 71, 0.2);
+        }
+
+        .card h2 {
+            background-color: #002147;
+            color: #FFFFFF;
+            padding: 0.5rem;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            margin: -1rem -2rem 1rem -2rem;
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            list-style-type: disc;
+            color: #002147;
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .card a {
+            color: #002147;
+            text-decoration: italic;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .profile-img {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .about-text {
+            flex: 1;
+            color: #002147;
+        }
+
+        .city-images {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .city-flag-img,
+        .web-resources-img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        }
+
+        .city-image-img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #87CEEB;
+            color: #002147;
+            text-align: center;
+            padding: 1rem;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .holy-grail-columns {
+                flex-direction: column;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .profile-img {
+                align-self: center;
+            }
+
+            .city-images {
+                justify-content: center;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+        }
