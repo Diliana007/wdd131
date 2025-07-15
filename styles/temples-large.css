@@ -1,0 +1,47 @@
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 1rem 2rem;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  figure {
+    padding: 1rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+
+  figure:hover {
+    box-shadow: 0 4px 12px rgba(44, 43, 77, 0.2);
+  }
+
+  figcaption {
+    font-size: 1.1rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
