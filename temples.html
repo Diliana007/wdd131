@@ -3,70 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131: Dinamic Web Fundamentals – Diliana Thompson</title>
+  <title>WDD 131: Temple Album - Diliana Thompson</title>
   <meta name="author" content="Diliana Thompson">
-  <meta name="description" content="Explore responsive web design, HTML, CSS, and JavaScript techniques for building dynamic, accessible websites.">
-  <link rel="stylesheet" href="styles/temples.css" />
-  <link rel="stylesheet" href="styles/temples-large.css" />
-  <script src="scripts/temples.js" defer></script>
+  <meta name="description" content="Explore responsive web design with this temple album gallery">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
 </head>
 
 <body>
-    <header>
-    <h1>Temple Album</h1>
-<nav>
-  <button id="hamburgerBtn" class="hamburger">☰</button>
-  <ul id="navMenu" class="nav-menu">
-  </ul>
-  <button id="closeBtn" class="close">✖</button>
-</nav>
-    </header>
+  <header>
+    <div class="header-container">
+      <h1 class="logo">Temple Album</h1>
+      <nav>
+        <button id="hamburgerBtn" class="hamburger">☰</button>
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <h2>Explore Our Sacred Collection</h2>
-    <!-- Temple gallery using placeholder image -->
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/london-england-temple/london-england-temple-4243-main.jpg" alt="London England Temple" />
-      <figcaption>London England Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/preston-england-temple/preston-england-temple-45357-main.jpg" alt="Preston England Temple" />
-      <figcaption>Preston England Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/freiberg-germany-temple/freiberg-germany-temple-16459-main.jpg" alt="Freiberg Germany Temple" />
-      <figcaption>Freiberg Germany Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg" alt="Rome Italy Temple" />
-      <figcaption>Rome Italy Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/stockholm-sweden-temple/stockholm-sweden-temple-30267-main.jpg" alt="Stockholm Sweden Temple" />
-      <figcaption>Stockholm Sweden Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-54641-main.jpg" alt="Switzerland Temple" />
-      <figcaption>Switzerland Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/the-hague-netherlands-temple/the-hague-netherlands-temple-40883-main.jpg" alt="The Hague Netherlands Temple" />
-      <figcaption>The Hague Netherlands Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/134-Kyiv-Ukraine-Temple.jpg" alt="Kyiv Ukraine Temple" />
-      <figcaption>Kyiv Ukraine Temple</figcaption>
-    </figure>
-    <figure>
-      <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg" alt="Madrid Spain Temple" />
-      <figcaption>Madrid Spain Temple</figcaption>
-    </figure>
+    <div class="gallery">
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/london-england-temple/london-england-temple-4243-main.jpg" alt="London England Temple">
+        <figcaption>London England Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/preston-england-temple/preston-england-temple-45357-main.jpg" alt="Preston England Temple">
+        <figcaption>Preston England Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/freiberg-germany-temple/freiberg-germany-temple-16459-main.jpg" alt="Freiberg Germany Temple">
+        <figcaption>Freiberg Germany Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg" alt="Rome Italy Temple">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/stockholm-sweden-temple/stockholm-sweden-temple-30267-main.jpg" alt="Stockholm Sweden Temple">
+        <figcaption>Stockholm Sweden Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/bern-switzerland-temple/bern-switzerland-temple-54641-main.jpg" alt="Bern Switzerland Temple">
+        <figcaption>Bern Switzerland Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/the-hague-netherlands-temple/the-hague-netherlands-temple-40883-main.jpg" alt="The Hague Netherlands Temple">
+        <figcaption>The Hague Netherlands Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/134-Kyiv-Ukraine-Temple.jpg" alt="Kyiv Ukraine Temple">
+        <figcaption>Kyiv Ukraine Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg" alt="Madrid Spain Temple">
+        <figcaption>Madrid Spain Temple</figcaption>
+      </figure>
+    </div>
   </main>
 
   <footer>
-      <p>&copy; <span id="currentyear"></span> Diliana Thompson. Coventry, England.</p>
-      <p id="lastModified"></p>
-    </footer>
-  </div>
+    <p>&copy; <span id="currentyear"></span> Diliana Thompson. Coventry, England.</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/temples.js"></script>
 </body>
 </html>

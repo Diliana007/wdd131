@@ -1,47 +1,64 @@
+/* Styles for screens 768px and larger */
 @media (min-width: 768px) {
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  .logo {
+    font-size: 2rem;
   }
-
-  nav a {
-    padding: 1rem 2rem;
-  }
-
-  nav li {
-    border: none;
-  }
-
-  #hamburger {
+  
+  .hamburger {
     display: none;
   }
-
-  .container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+  
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
   }
-
-  figure {
-    padding: 1rem;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
+  
+  .nav-menu li {
+    border-top: none;
+    margin: 0 0.5rem;
   }
-
-  figure:hover {
-    box-shadow: 0 4px 12px rgba(44, 43, 77, 0.2);
+  
+  .nav-menu a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
   }
-
-  figcaption {
-    font-size: 1.1rem;
+  
+  h2 {
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
   }
-
-  main {
-    padding: 2rem;
+  
+  h2::after {
+    width: 100px;
+    bottom: -15px;
   }
-
+  
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  figure img {
+    height: 250px;
+  }
+  
   footer {
-    font-size: 1rem;
     padding: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .nav-menu {
+    gap: 1.5rem;
   }
 }
