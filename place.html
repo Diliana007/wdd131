@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="City page for London with responsive weather and data cards" />
-  <meta name="author" content="Diliana Thompson" />
   <title>London - City Info</title>
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles/design.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <header>
     <h1>London</h1>
@@ -20,9 +16,9 @@
 
   <main class="hero-container">
     <picture class="hero-image">
-      <source srcset="images/london-small.webp" media="(max-width: 650px)" type="image/webp" />
-      <source srcset="images/london-large.webp" media="(min-width: 651px)" type="image/webp" />
-      <img src="images/london-large.webp" alt="London Skyline" />
+      <source srcset="images/london-small.webp" media="(max-width: 650px)" type="image/webp">
+      <source srcset="images/london-large.webp" media="(min-width: 651px)" type="image/webp">
+      <img src="images/london-large.webp" alt="London Skyline">
     </picture>
 
     <section class="card data">
@@ -38,8 +34,7 @@
     </section>
 
     <section class="card weather">
-      <h2>
-        Weather
+      <h2>Weather
         <object data="images/weather-suncloud.svg" type="image/svg+xml" class="svg-icon"></object>
       </h2>
       <p><strong>Temperature:</strong> 5°C</p>
@@ -53,6 +48,43 @@
     <p>Last modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/script.js" defer></script>
+  <script>
+    // Wind Chill Calculation
+    function calculateWindChill(t, s) {
+      return (t <= 10 && s > 4.8)
+        ? Math.round(13.12 + 0.6215 * t - 11.37 * Math.pow(s, 0.16) + 0.3965 * t * Math.pow(s, 0.16))
+        : "N/A";
+    }
+
+    const temp = 5; // example Celsius
+    const speed = 10; // example km/h
+    const windChill = calculateWindChill(temp, speed);
+    document.querySelector('#windchill').textContent = `Wind Chill: ${windChill}°C`;
+
+    // Footer Date
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+
+  <style>
+      @media (min-width: 651px) {
+    header{
+      position: relative;
+      text-align: center;
+    }
+      
+      header::after {
+      content: "";
+      display: inline-block ;
+      width: 100px;
+      height: 60px;
+      margin-top: 0.5rem auto 0 auto;
+      background-image: url('images/unionheart-1-removebg-preview.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  </style>
 </body>
 </html>
