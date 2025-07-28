@@ -1,13 +1,15 @@
 /* styles/design.css */
 
+/* === Global Variables === */
 :root {
-  --metro-blue: #0078D7; /* Metro blue */
-  --telephone-box-red: #cc1122; /* Iconic red */
+  --metro-blue: #0078D7; /* Metro Blue */
+  --telephone-box-red: #cc1122; /* Iconic Red */
   --light-bg: rgba(255, 255, 255, 0.85);
   --text-dark: #111;
   --border-radius: 0.75rem;
 }
 
+/* === Base Styles === */
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -15,22 +17,22 @@ body {
   color: var(--text-dark);
 }
 
+/* === Header === */
 header {
   background-color: var(--telephone-box-red);
   padding: 2rem 1rem 1rem;
-  position: relative;
   text-align: center;
   color: white;
+  position: relative;
 }
 
 h1 {
   font-size: 3rem;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
   margin: 0;
-  color: white;
 }
 
-/* FULL-WIDTH BLUE + WHITE LINE under London heading */
+/* === Heading Divider === */
 .underline {
   width: 100%;
   position: relative;
@@ -41,19 +43,20 @@ h1 {
 .underline::before {
   content: "";
   display: block;
-  background-color: var(--metro-blue);
   height: 10px;
   width: 100%;
+  background-color: var(--metro-blue);
 }
 
 .underline::after {
   content: "";
   display: block;
-  background-color: white;
   height: 4px;
   width: 100%;
+  background-color: white;
 }
 
+/* === Hero Image Container === */
 .hero-container {
   position: relative;
   max-width: 1000px;
@@ -67,7 +70,7 @@ h1 {
   display: block;
 }
 
-/* Generic Card Layout */
+/* === Card Styles === */
 .card {
   position: absolute;
   background-color: var(--light-bg);
@@ -76,10 +79,9 @@ h1 {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   max-width: 300px;
   overflow: hidden;
-  padding-top: 0;
 }
 
-/* CARD HEADER - METRO BLUE with white text */
+/* Card Header */
 .card h2 {
   margin: 0;
   background-color: var(--metro-blue);
@@ -90,13 +92,13 @@ h1 {
   border-top-right-radius: var(--border-radius);
 }
 
-/* Content inside card */
+/* Card Content */
 .card p {
   padding: 0 1rem 0.75rem;
   margin: 0.5rem 0;
 }
 
-/* Positions for Desktop */
+/* === Card Positions (Desktop) === */
 .data {
   top: 1rem;
   left: 1rem;
@@ -107,14 +109,14 @@ h1 {
   right: 1rem;
 }
 
-/* WEATHER SVG - now SLIGHTLY BIGGER */
+/* === Weather Icon === */
 .svg-icon {
   height: 4em;
   vertical-align: middle;
   margin-left: 0.4rem;
 }
 
-/* Responsive Stacking */
+/* === Responsive Layout === */
 @media (max-width: 650px) {
   .card {
     position: static;
@@ -130,6 +132,7 @@ h1 {
   }
 }
 
+/* === Footer === */
 footer {
   background-color: var(--telephone-box-red);
   color: white;
