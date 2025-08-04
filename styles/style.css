@@ -40,6 +40,15 @@ h3 {
   font-family: 'Playfair Display', serif;
 }
 
+.intro {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  color: var(--text-color);
+}
+
 
 /* ---------- Header ---------- */
 header {
