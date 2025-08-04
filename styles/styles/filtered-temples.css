@@ -1,0 +1,159 @@
+:root {
+  --metro-blue: #0078D7;
+  --telephone-box-red: #cc1122;
+  --light-bg: rgba(255, 255, 255, 0.85);
+  --text-dark: #111;
+  --border-radius: 0.75rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--telephone-box-red);
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 60px;
+  margin-top: 1rem;
+  background-image: url("images/unionheartsmallsmall.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Responsive flag adjustment */
+@media (max-width: 650px) {
+  header::after {
+    width: 80px;
+    height: 48px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  margin: 0;
+  color: white;
+}
+
+/* Blue + white underline */
+.underline {
+  width: 100%;
+  position: relative;
+  height: 14px;
+  margin-top: 1rem;
+}
+
+.underline::before {
+  content: "";
+  display: block;
+  background-color: var(--metro-blue);
+  height: 10px;
+  width: 100%;
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  background-color: white;
+  height: 4px;
+  width: 100%;
+}
+
+.hero-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Card layout */
+.card {
+  position: absolute;
+  background-color: var(--light-bg);
+  backdrop-filter: blur(6px);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  max-width: 300px;
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.card h2 {
+  margin: 0;
+  background-color: var(--metro-blue);
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.card p {
+  padding: 0 1rem 0.75rem;
+  margin: 0.5rem 0;
+}
+
+/* Card positions */
+.data {
+  top: 1rem;
+  left: 1rem;
+}
+
+.weather {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.svg-icon {
+  height: 4em;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+/* Responsive card stacking */
+@media (max-width: 650px) {
+  .card {
+    position: static;
+    max-width: none;
+    width: calc(100% - 2rem);
+    margin: 1rem auto;
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--telephone-box-red);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
