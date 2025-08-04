@@ -1,6 +1,8 @@
+/* styles/design.css */
+
 :root {
-  --metro-blue: #0078D7;
-  --telephone-box-red: #cc1122;
+  --metro-blue: #0078D7; /* Metro blue */
+  --telephone-box-red: #cc1122; /* Iconic red */
   --light-bg: rgba(255, 255, 255, 0.85);
   --text-dark: #111;
   --border-radius: 0.75rem;
@@ -12,6 +14,8 @@ body {
   background-color: #f9f9f9;
   color: var(--text-dark);
 }
+
+
 
 header {
   background-color: var(--telephone-box-red);
@@ -30,12 +34,12 @@ header::after {
   width: 100px;
   height: 60px;
   margin-top: 1rem;
-  background-image: url("images/unionheartsmallsmall.webp");
+  background-image:'images/unionheartsmallsmall.webp';
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Responsive flag adjustment */
+/* Optional: Adjust flag size for smaller screens */
 @media (max-width: 650px) {
   header::after {
     width: 80px;
@@ -50,7 +54,7 @@ h1 {
   color: white;
 }
 
-/* Blue + white underline */
+/* FULL-WIDTH BLUE + WHITE LINE under London heading */
 .underline {
   width: 100%;
   position: relative;
@@ -79,9 +83,6 @@ h1 {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .hero-image img {
@@ -90,7 +91,7 @@ h1 {
   display: block;
 }
 
-/* Card layout */
+/* Generic Card Layout */
 .card {
   position: absolute;
   background-color: var(--light-bg);
@@ -102,6 +103,7 @@ h1 {
   padding-top: 0;
 }
 
+/* CARD HEADER - METRO BLUE with white text */
 .card h2 {
   margin: 0;
   background-color: var(--metro-blue);
@@ -112,12 +114,13 @@ h1 {
   border-top-right-radius: var(--border-radius);
 }
 
+/* Content inside card */
 .card p {
   padding: 0 1rem 0.75rem;
   margin: 0.5rem 0;
 }
 
-/* Card positions */
+/* Positions for Desktop */
 .data {
   top: 1rem;
   left: 1rem;
@@ -128,13 +131,14 @@ h1 {
   right: 1rem;
 }
 
+/* WEATHER SVG - now SLIGHTLY BIGGER */
 .svg-icon {
   height: 4em;
   vertical-align: middle;
   margin-left: 0.4rem;
 }
 
-/* Responsive card stacking */
+/* Responsive Stacking */
 @media (max-width: 650px) {
   .card {
     position: static;
@@ -142,9 +146,14 @@ h1 {
     width: calc(100% - 2rem);
     margin: 1rem auto;
   }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-/* Footer styles */
 footer {
   background-color: var(--telephone-box-red);
   color: white;
