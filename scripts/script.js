@@ -148,3 +148,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
   });
+
+  // Toggle navigation menu on hamburger click
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+});
