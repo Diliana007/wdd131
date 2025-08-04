@@ -18,18 +18,11 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
+/* ---------- Global Styles ---------- */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
-
-.logo,
-h1,
-h2,
-h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
@@ -41,9 +34,12 @@ body {
 }
 
 .logo,
-h2 {
+h1,
+h2,
+h3 {
   font-family: 'Playfair Display', serif;
 }
+
 
 /* ---------- Header ---------- */
 header {
