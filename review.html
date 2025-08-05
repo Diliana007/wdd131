@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Review Submitted - Dinamic Beauty Parlour</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <meta name="description" content="Thank you page for Dinamic Beauty Parlour Review">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -12,26 +13,15 @@
   </header>
 
   <main>
-    <p>Your feedback has been successfully submitted.</p>
-    <p>Reviews Submitted So Far: <span id="reviewCounter">0</span></p>
-    <a href="form.html">⬅ Go Back to Form</a>
+    <p>Your feedback helps <strong>Dinamic Beauty Parlour</strong> continue to provide excellent service. 🌸</p>
+    <p><a href="form.html">⬅️ Go back to submit another review</a></p>
   </main>
 
   <footer>
-    <p>
-      &copy; <span id="currentyear"></span> 🌸 
-      <strong>Dinamic Beauty Parlour</strong> | Coventry, England <br>
-      WDD 131 | Product Review Form <br>
-      <em>Designed with 💖 by Diliana Thompson</em>
-    </p>
+    <p>&copy; <span id="currentyear"></span> Dinamic Beauty Parlour | Coventry, England</p>
   </footer>
 
   <script>
-    // Counter logic
-    let count = parseInt(localStorage.getItem("reviewCount") || "0") + 1;
-    localStorage.setItem("reviewCount", count);
-    document.getElementById("reviewCounter").textContent = count;
-
     document.getElementById("currentyear").textContent = new Date().getFullYear();
   </script>
 </body>
