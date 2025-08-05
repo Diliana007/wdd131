@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customer Service Review - Dinamic Beauty Parlour">
+  <title>Dinamic Beauty Parlour Review</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>💅 👑 Dinamic Beauty Parlour Review 💝</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm" method="get" action="review.html">
+      <!-- Service Selection -->
+      <label for="service">Service Received <span>*</span></label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Select a Service...</option>
+      </select>
+
+      <!-- Star Rating -->
+      <fieldset>
+        <legend>Overall Rating <span>*</span></legend>
+        <label><input type="radio" name="rating" value="1" required> ⭐</label>
+        <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
+        <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
+        <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
+        <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
+      </fieldset>
+
+      <!-- Date of Visit -->
+      <label for="visitDate">Date of Visit <span>*</span></label>
+      <input type="date" id="visitDate" name="visitDate" required>
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Which features did you find useful? (check all that apply)</legend>
+        <label><input type="checkbox" name="features" value="Clean Environment"> Clean Environment</label>
+        <label><input type="checkbox" name="features" value="Friendly Staff"> Friendly Staff</label>
+        <label><input type="checkbox" name="features" value="Affordable Prices"> Affordable Prices</label>
+        <label><input type="checkbox" name="features" value="Relaxing Atmosphere"> Relaxing Atmosphere</label>
+      </fieldset>
+
+      <!-- Feedback -->
+      <label for="review">Your Feedback</label>
+      <textarea id="review" name="review" rows="4" placeholder="Share your beauty experience..."></textarea>
+
+      <!-- Optional Name -->
+      <label for="username">Your Name (optional)</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name">
+
+      <!-- Submit -->
+      <input type="submit" value="💌 Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> 🌸 
+      <strong>Dinamic Beauty Parlour</strong> | Coventry, England <br>
+      WDD 131 | Product Review Form <br>
+      <em>Designed with 💖 by Diliana Thompson</em>
+    </p>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

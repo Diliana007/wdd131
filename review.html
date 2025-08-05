@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Submitted - Dinamic Beauty Parlour</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>💖 Thank You for Your Review! 💖</h1>
+  </header>
+
+  <main>
+    <p>Your feedback has been successfully submitted.</p>
+    <p>Reviews Submitted So Far: <span id="reviewCounter">0</span></p>
+    <a href="form.html">⬅ Go Back to Form</a>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> 🌸 
+      <strong>Dinamic Beauty Parlour</strong> | Coventry, England <br>
+      WDD 131 | Product Review Form <br>
+      <em>Designed with 💖 by Diliana Thompson</em>
+    </p>
+  </footer>
+
+  <script>
+    // Counter logic
+    let count = parseInt(localStorage.getItem("reviewCount") || "0") + 1;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("reviewCounter").textContent = count;
+
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
