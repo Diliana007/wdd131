@@ -1,68 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Customer Service Review - Dinamic Beauty Parlour">
-  <title>Dinamic Beauty Parlour Review</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diliana Thompson"> 
+    <meta name="description" content="Submit your review and feedback for Dinamic Beauty Parlour services.">
+    <title>Dinamic Beauty Parlour - Product Review Form</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <h1>💅 👑 Dinamic Beauty Parlour Review 💝</h1>
-    <div class="counter-badge">
-      Reviews Submitted: 
-      <span id="reviewCounter" aria-live="polite">0</span>
-    </div>
-  </header>
+    <header>
+        <h1>💅 👑 Dinamic Beauty Parlour Review 💝</h1>
+    </header>
 
-  <main>
-    <form id="reviewForm">
-      <!-- Service Selection -->
-      <label for="service">Service Received <span>*</span></label>
-      <select id="service" name="service" required></select>
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            
+            <!-- Product Name (Populated by JS) -->
+            <label for="productName">Select Service <span>*</span></label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a service...</option>
+            </select>
 
-      <!-- Star Rating -->
-      <label for="rating">Overall Rating <span>*</span></label>
-      <div class="rating-group" role="radiogroup" aria-label="Star rating">
-        <input type="radio" id="star5" name="rating" value="5" required>
-        <label for="star5">★</label>
+            <!-- Your Name -->
+            <label for="name">Your Name <span>*</span></label>
+            <input type="text" id="name" name="name" required>
 
-        <input type="radio" id="star4" name="rating" value="4">
-        <label for="star4">★</label>
+            <!-- Overall Rating -->
+            <label>Overall Rating <span>*</span></label>
+            <div class="rating-group">
+                <input type="radio" id="rate1" name="rating" value="1" required>
+                <label for="rate1">1</label>
 
-        <input type="radio" id="star3" name="rating" value="3">
-        <label for="star3">★</label>
+                <input type="radio" id="rate2" name="rating" value="2">
+                <label for="rate2">2</label>
 
-        <input type="radio" id="star2" name="rating" value="2">
-        <label for="star2">★</label>
+                <input type="radio" id="rate3" name="rating" value="3">
+                <label for="rate3">3</label>
 
-        <input type="radio" id="star1" name="rating" value="1">
-        <label for="star1">★</label>
-      </div>
+                <input type="radio" id="rate4" name="rating" value="4">
+                <label for="rate4">4</label>
 
-      <!-- Date -->
-      <label for="visitDate">Date of Visit <span>*</span></label>
-      <input type="date" id="visitDate" name="visitDate" required>
+                <input type="radio" id="rate5" name="rating" value="5">
+                <label for="rate5">5</label>
+            </div>
 
-      <!-- Review -->
-      <label for="review">Your Feedback</label>
-      <textarea id="review" name="review" rows="4" placeholder="Share your beauty experience..."></textarea>
+            <!-- Installation Date -->
+            <label for="installDate">Date of Service <span>*</span></label>
+            <input type="date" id="installDate" name="installDate" required>
 
-      <!-- Submit Button -->
-      <button type="submit">💌 Submit Review</button>
-    </form>
-  </main>
+            <!-- Checkboxes -->
+            <label>Services Experienced <span>*</span></label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="luxury" name="features" value="Luxury Treatment">
+                <label for="luxury">Luxury Treatment</label><br>
 
-  <footer>
-    <p>
-      &copy; <span id="currentyear"></span> 🌸 
-      <strong>Dinamic Beauty Parlour</strong> | Coventry, England <br>
-      WDD 131 | Product Review Form <br>
-      <em>Designed with 💖 by Diliana Thompson</em>
-    </p>
-  </footer>
+                <input type="checkbox" id="massage" name="features" value="Massage">
+                <label for="massage">Massage</label><br>
 
-  <script src="scripts/script.js"></script>
+                <input type="checkbox" id="makeup" name="features" value="Makeup">
+                <label for="makeup">Makeup</label><br>
+
+                <input type="checkbox" id="hair" name="features" value="Hair Styling">
+                <label for="hair">Hair Styling</label>
+            </div>
+
+            <!-- Additional Feedback -->
+            <label for="feedback">Additional Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your comments here..."></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Diliana Thompson| WDD 131 Product Review Form | Coventry - England</p> 
+    </footer>
+
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
