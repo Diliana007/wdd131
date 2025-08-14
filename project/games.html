@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Games | Board Game Haven</title>
+  <meta name="description" content="Explore over 500 board games at Board Game Haven. Filter by category, players, and difficulty. Strategy games, party games, family games and more!">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' x='5' font-size='48'%3E%F0%9F%8E%B2%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Board Game Haven home">
+        <i class="fas fa-chess-rook" aria-hidden="true"></i>
+        <span>Board Game Haven</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" aria-label="Primary">
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="games.html">Games</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation-section.html">Reserve</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="badge-wrap" aria-live="polite">
+            <span class="badge" id="reservationCount" title="Saved reservations">0</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Game Library</h1>
+        <p class="page-subtitle">Discover our collection of over 500 board games! From strategic epics to quick party games, we have something for every player and occasion.</p>
+      </div>
+    </section>
+
+    <section class="games-section">
+      <div class="container">
+        <div class="games-filters">
+          <div class="filter-group">
+            <h3>Categories</h3>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-filter="all">All Games</button>
+              <button class="filter-btn" data-filter="strategy">Strategy</button>
+              <button class="filter-btn" data-filter="party">Party</button>
+              <button class="filter-btn" data-filter="cooperative">Cooperative</button>
+              <button class="filter-btn" data-filter="family">Family</button>
+            </div>
+          </div>
+          
+          <div class="filter-group">
+            <h3>Difficulty</h3>
+            <div class="filter-buttons">
+              <button class="filter-btn" data-filter="easy">Easy</button>
+              <button class="filter-btn" data-filter="medium">Medium</button>
+              <button class="filter-btn" data-filter="hard">Hard</button>
+            </div>
+          </div>
+          
+          <div class="search-group">
+            <h3>Search</h3>
+            <div class="search-container">
+              <i class="fas fa-search" aria-hidden="true"></i>
+              <input type="text" id="gameSearch" placeholder="Search games..." aria-label="Search games">
+            </div>
+          </div>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+          <!-- Games will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-minimal">
+        <div class="footer-brand">
+          <h3>Board Game Haven</h3>
+          <p>Where games, food & friends meet</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="games.html">Games</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Board Game Haven. All rights reserved. | WDD 131 Project | <a href="references.html">References</a> | Designed with ❤️ by Diliana Thompson</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>

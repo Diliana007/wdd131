@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Board Game Haven</title>
+  <meta name="description" content="Contact Board Game Haven for reservations, inquiries, or feedback. Visit our café, call us, or send us a message. We're here to help make your gaming experience exceptional.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' x='5' font-size='48'%3E%F0%9F%8E%B2%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Board Game Haven home">
+        <i class="fas fa-chess-rook" aria-hidden="true"></i>
+        <span>Board Game Haven</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" aria-label="Primary">
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation-section.html">Reserve</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li class="badge-wrap" aria-live="polite">
+            <span class="badge" id="reservationCount" title="Saved reservations">0</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="page-title">Get in Touch</h1>
+        <p class="page-subtitle">Whether you have questions about our games, want to plan an event, or just want to say hello, we'd love to hear from you. Your next great gaming adventure starts with a conversation.</p>
+      </div>
+    </section>
+
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Visit Our Café</h2>
+            <p class="contact-intro">Step into our world of games, great food, and friendly faces. We're conveniently located in the heart of Board City and can't wait to welcome you.</p>
+            
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <div>
+                <h3>Location</h3>
+                <address>
+                  123 Game Street<br>
+                  Board City, BC 12345<br>
+                  Canada
+                </address>
+                <p><a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="directions-link">Get Directions <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+15551234263">(555) 123-GAME (4263)</a></p>
+                <p class="contact-note">Call for reservations, party planning, or general inquiries</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:info@boardgamehaven.com">info@boardgamehaven.com</a></p>
+                <p class="contact-note">We typically respond within 24 hours</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+              <div>
+                <h3>Hours of Operation</h3>
+                <div class="hours-grid">
+                  <div class="hours-day">
+                    <span class="day">Monday - Thursday</span>
+                    <span class="time">3:00 PM - 11:00 PM</span>
+                  </div>
+                  <div class="hours-day">
+                    <span class="day">Friday - Sunday</span>
+                    <span class="time">12:00 PM - 12:00 AM</span>
+                  </div>
+                </div>
+                <p class="contact-note">Extended hours during holidays and special events</p>
+              </div>
+            </div>
+
+            <div class="social-section">
+              <h3>Connect With Us</h3>
+              <p>Follow us for the latest game arrivals, event announcements, and special offers!</p>
+              <div class="social-links">
+                <a href="#" aria-label="Follow us on Facebook" title="Facebook">
+                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Follow us on Instagram" title="Instagram">
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Follow us on Twitter" title="Twitter">
+                  <i class="fab fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" aria-label="Join our Discord server" title="Discord">
+                  <i class="fab fa-discord" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <p class="form-intro">Have a question, suggestion, or special request? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Full Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" name="name" required aria-describedby="nameError">
+                  <span class="error-message" id="nameError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email Address <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" name="email" required aria-describedby="emailError">
+                  <span class="error-message" id="emailError" role="alert"></span>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" name="phone" aria-describedby="phoneHelp">
+                  <small id="phoneHelp" class="form-help">Optional - for urgent inquiries</small>
+                </div>
+                <div class="form-group">
+                  <label for="contactSubject">Subject</label>
+                  <select id="contactSubject" name="subject" aria-describedby="subjectHelp">
+                    <option value="">Select a topic</option>
+                    <option value="reservation">Table Reservation</option>
+                    <option value="event">Private Event Planning</option>
+                    <option value="games">Game Recommendations</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <small id="subjectHelp" class="form-help">Help us route your message</small>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contactMessage">Message <span class="required">*</span></label>
+                <textarea id="contactMessage" name="message" rows="6" required aria-describedby="messageError messageHelp" placeholder="Tell us how we can help you..."></textarea>
+                <small id="messageHelp" class="form-help">Please provide as much detail as possible</small>
+                <span class="error-message" id="messageError" role="alert"></span>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                  Send Message
+                </button>
+                <button type="reset" class="btn btn-secondary">
+                  <i class="fas fa-undo" aria-hidden="true"></i>
+                  Clear Form
+                </button>
+              </div>
+              
+              <div class="form-status" role="status" aria-live="polite">
+                <p class="form-message" id="contactFormMessage"></p>
+              </div>
+            </form>
+
+            <div class="quick-contact">
+              <h3>Need Immediate Assistance?</h3>
+              <div class="quick-contact-options">
+                <a href="tel:+15551234263" class="quick-contact-item">
+                  <i class="fas fa-phone" aria-hidden="true"></i>
+                  <span>Call Now</span>
+                </a>
+                <a href="reservation-section.html" class="quick-contact-item">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  <span>Book Table</span>
+                </a>
+                <a href="mailto:info@boardgamehaven.com" class="quick-contact-item">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                  <span>Email Us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Do I need a reservation?</h3>
+            <p>While walk-ins are welcome, we highly recommend making a reservation, especially for evenings and weekends, to guarantee your table.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I bring my own games?</h3>
+            <p>Absolutely! While we have over 500 games available, you're welcome to bring your own favorites to share with friends.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you host private events?</h3>
+            <p>Yes! We offer private event packages for birthday parties, corporate team building, and special celebrations. Contact us for details.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is there a cover charge?</h3>
+            <p>No cover charge! We only ask that each person orders at least one item from our delicious menu during their visit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-minimal">
+        <div class="footer-brand">
+          <h3>Board Game Haven</h3>
+          <p>Where games, food & friends meet</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="games.html">Games</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Board Game Haven. All rights reserved. | WDD 131 Project | <a href="references.html">References</a> | Designed with ❤️ by Diliana Thompson</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
+       

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Board Game Haven | Local Café</title>
+  <meta name="description" content="Board Game Haven: 500+ board games, gourmet café, weekly events. Book a table, browse games, and join our friendly gaming community.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' x='5' font-size='48'%3E%F0%9F%8E%B2%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Board Game Haven home">
+        <i class="fas fa-chess-rook" aria-hidden="true"></i>
+        <span>Board Game Haven</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="main-nav" aria-label="Primary">
+        <ul id="navMenu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation-section.html">Reserve</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="badge-wrap" aria-live="polite">
+            <span class="badge" id="reservationCount" title="Saved reservations">0</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-enhanced" aria-label="Welcome" style="background-image: url('images/hero-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; overflow: hidden;">
+      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255, 240, 246, 0.75) 0%, rgba(209, 107, 165, 0.3) 50%, rgba(199, 119, 185, 0.4) 100%); animation: pulseOverlay 4s ease-in-out infinite;"></div>
+      <div class="hero-background" style="position: relative; z-index: 1;">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content" style="position: relative; z-index: 3; border-radius: 25px; padding: 50px; box-shadow: 0 20px 60px rgba(209, 107, 165, 0.4), 0 0 40px rgba(199, 119, 185, 0.3); transform: perspective(1000px) rotateX(5deg); animation: heroGlow 3s ease-in-out infinite alternate; border: 2px solid rgba(255, 255, 255, 0.3);">
+        <div style="position: relative; z-index: 2; text-shadow: 2px 2px 8px rgba(58, 0, 58, 0.5);">
+        <h1 class="hero-title" style="animation: slideInDown 1.2s ease-out, textShimmer 2s ease-in-out infinite alternate;">Where Games, Food &amp; Friends Meet</h1>
+        <p class="hero-subtitle" style="animation: slideInUp 1.5s ease-out; text-shadow: 1px 1px 4px rgba(58, 0, 58, 0.3);">Discover over 500 board games, enjoy delicious food and drinks, and connect with fellow gaming enthusiasts in our cozy café.</p>
+        <div class="hero-btns">
+          <a href="reservation-section.html" class="btn btn-primary">Book Table</a>
+          <a href="games.html" class="btn btn-secondary">Browse Games</a>
+          <a href="menu.html" class="btn btn-secondary">View Menu</a>
+        </div>
+        </div>
+      </div>
+      <style>
+        @keyframes heroGlow {
+          0% { box-shadow: 0 20px 60px rgba(209, 107, 165, 0.4), 0 0 40px rgba(199, 119, 185, 0.3); }
+          100% { box-shadow: 0 25px 80px rgba(209, 107, 165, 0.6), 0 0 60px rgba(199, 119, 185, 0.5); }
+        }
+        @keyframes pulseOverlay {
+          0%, 100% { opacity: 0.85; }
+          50% { opacity: 0.95; }
+        }
+        @keyframes slideInDown {
+          0% { transform: translateY(-50px); opacity: 0; }
+          100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes slideInUp {
+          0% { transform: translateY(30px); opacity: 0; }
+          100% { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes zoomIn {
+          0% { transform: scale(0.8); opacity: 0; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes bounce {
+          0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+          40% { transform: translateY(-10px); }
+          60% { transform: translateY(-5px); }
+        }
+        @keyframes textShimmer {
+          0% { text-shadow: 2px 2px 8px rgba(58, 0, 58, 0.5), 0 0 20px rgba(209, 107, 165, 0.3); }
+          100% { text-shadow: 2px 2px 8px rgba(58, 0, 58, 0.7), 0 0 30px rgba(209, 107, 165, 0.6); }
+        }
+      </style>
+    </section>
+
+    <section class="quick-info" aria-labelledby="info-title">
+      <div class="container">
+        <h2 class="sr-only" id="info-title">Quick Information</h2>
+        <div class="info-grid">
+          <div class="info-card">
+            <i class="fas fa-dice" aria-hidden="true"></i>
+            <h3>500+ Games</h3>
+            <p>Huge library for all skill levels</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-mug-hot" aria-hidden="true"></i>
+            <h3>Gourmet Café</h3>
+            <p>Delicious food and specialty drinks</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <h3>Open Daily</h3>
+            <p>Mon-Thu: 3pm-11pm, Fri-Sun: Extended hours</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <h3>Gaming Community</h3>
+            <p>Friendly gaming atmosphere and welcoming community</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-games" aria-labelledby="featured-games-title">
+      <div class="container">
+        <h2 class="section-title" id="featured-games-title">Featured Games</h2>
+        <div class="games-preview-grid" id="gamesPreview">
+          <!-- Games will be populated by JavaScript -->
+        </div>
+        <div class="section-cta">
+          <a href="games.html" class="btn btn-primary">View All Games</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-menu" aria-labelledby="featured-menu-title">
+      <div class="container">
+        <h2 class="section-title" id="featured-menu-title">Popular Menu Items</h2>
+        <div class="menu-preview-grid" id="menuPreview">
+          <!-- Menu items will be populated by JavaScript -->
+        </div>
+        <div class="section-cta">
+          <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section-title" id="about-title">About Us</h2>
+        <div class="about-card">
+          <p>At <strong>Board Game Haven</strong>, we believe that a table surrounded by friends, family, snacks, and games is more than entertainment — it's a recipe for connection.</p>
+          <p><em>Research supports this: a 2017 study in the <strong>American Journal of Play</strong> found that playing tabletop games can improve cognitive flexibility, reduce stress, and strengthen social bonds across age groups.</em></p>
+          <blockquote class="quote-block">
+            <p>"When playing a game, the goal is to win, but it is the goal that is important, not the winning."</p>
+            <footer>— Reiner Knizia</footer>
+          </blockquote>
+          <p>Our mission is to create a welcoming café where laughter is loud, phones stay in pockets, and every roll of the dice brings people closer together. Whether you're a competitive strategist, a curious beginner, or just here for the cake — you belong at our table.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-minimal">
+        <div class="footer-brand">
+          <h3>Board Game Haven</h3>
+          <p>Where games, food & friends meet</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="games.html">Games</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Board Game Haven. All rights reserved. | WDD 131 Project | <a href="references.html">References</a> | Designed with ❤️ by Diliana Thompson</p>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
