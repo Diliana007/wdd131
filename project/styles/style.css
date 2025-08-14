@@ -108,10 +108,11 @@ section{padding-block:64px}
 .game-info h3{margin:0 0 0.8rem;color:var(--primary);font-size:1.3rem;font-weight:700;line-height:1.2}
 .game-info p{color:#666;font-size:0.95rem;line-height:1.6;margin-bottom:1rem}
 .game-meta{display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:1rem;font-size:0.9rem;color:var(--secondary);gap:0.5rem}
-.game-meta span{display:flex;align-items:center;gap:6px}
+.game-meta span{display:flex;align-items:center;gap:6px;}
 
 /* ====== CALENDAR ====== */
 .events{background:#fff}
+.events{background:#fff;}
 .calendar{background:var(--light);border-radius:14px;padding:24px;box-shadow:var(--shadow);max-width:900px;margin-inline:auto}
 .calendar-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
 .calendar-nav button{background:var(--primary);color:#fff;border:0;padding:8px 12px;border-radius:10px;cursor:pointer;transition:var(--transition)}
@@ -1181,5 +1182,32 @@ section{padding-block:64px}
   .cta-actions .btn {
     width: 100%;
     max-width: 280px;
+  }
+}
+
+/* ====== GAME CARD MOBILE FIX ====== */
+@media (max-width: 560px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .game-card {
+    padding: 0;
+    min-width: 0;
+  }
+  .game-info h3, .game-name {
+    font-size: 1.1rem !important;
+    padding: 0.5rem 0.2rem !important;
+    word-break: break-word;
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    background: none !important;
+    color: var(--primary) !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  .game-info {
+    padding: 1rem !important;
   }
 }
